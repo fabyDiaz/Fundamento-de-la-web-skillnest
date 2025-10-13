@@ -1,0 +1,37 @@
+.fondo{
+    height: 250px;
+    background-color: #00BCD4;
+}
+
+.img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 7px solid white;
+    background-color: grey;
+     position: absolute; 
+    top: 100px; 
+    left: 100px;
+}
+
+.contenido{
+    margin: 200px 100px 100px 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: rgb(77, 77, 77);
+}
+
+.contenido h3{
+    font-weight: 400;
+}
+
+.contenido h2{
+    font-weight: 100;
+}
+
+.contenido button{
+    border: none;
+    background-color: rgb(234, 234, 234);
+    padding: 15px;
+}
+

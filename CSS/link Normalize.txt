@@ -1,0 +1,8 @@
+Normalize
+En lugar de eliminar todos los estilos predeterminados, lo que hace es homogeneizar la apariencia de todos los elementos en diferentes navegadores, pero manteniendo los estilos útiles predeterminados. Esto significa que corrige los problemas comunes entre navegadores y mejora la usabilidad sin forzarte a reinventar la rueda para cosas básicas como la renderización de los elementos.
+
+Para agregar normalize a tus proyectos, lo puedes hacer agregando un link al HTML de tu sitio, de esta manera. Este link se obtiene de acá: https://cdnjs.com/libraries/normalize
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+

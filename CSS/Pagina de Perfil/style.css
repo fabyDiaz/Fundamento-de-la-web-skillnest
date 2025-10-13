@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: rgb(77, 77, 77);
+}
+
+.navbar {
+    background-color: #333333;
+    color: #ffffff;
+    font-family:'Arial Narrow Bold', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 15px 10% 15px 10% ;
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style-type: none;
+    flex:3;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav-links li {
+    margin-right: 20px;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.nav-links li a:hover {
+    color: #ccc;
+}
+
+.nav-links button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links button:hover {
+    background-color: #2980b9;
+}
+
+/*Card 1, perfil */
+.fondo{
+    height: 250px;
+    background-color: #00BCD4;
+}
+
+.img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 7px solid white;
+    background-color: grey;
+    position: absolute; 
+    top: 200px; 
+    left: 100px;
+    object-fit: cover; /* Evita la distorsión */
+    object-position: center; /* Centra la imagen */
+
+}
+
+.contenido{
+    margin: 200px 100px 50px 100px;
+    
+}
+
+.contenido h3{
+    font-weight: 400;
+}
+
+.contenido h2{
+    font-weight: 100;
+}
+
+.contenido a{
+    text-decoration: none;
+}
+.contenido i{
+    padding-right: 5px;
+
+}
+
+.cuerpo{
+    display:flex;
+}
+
+main{
+    flex:3;
+    margin: 30px;
+}
+
+.card{
+    border-radius: 20px;
+    overflow: hidden; /*hace que cualquier contenido hijo que sobrepase los límites del contenedor se recorte*/
+    box-shadow: 0px 5px 5px rgb(192, 190, 190);
+}
+main .card:nth-child(2){
+    padding: 20px 100px 50px 100px;
+    margin-top: 50px;
+
+}
+
+main .card:nth-child(2) p{
+    margin: 0;
+    padding: 0
+
+}
+
+/*Aside*/
+
+aside{
+    flex: 1;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+aside h2{
+    padding: 20px;
+}
+
+.solicitudes{
+    margin: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.solicitudes *{
+    margin-right: 20px;
+}
+
+.solicitudes img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+    object-position: center; /* Centra la imagen */
+    border: 3px solid  #00BCD4 ;
+    border-radius: 10px;
+}
+
+.conexiones{
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.conexiones img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+    object-position: center; /* Centra la imagen */
+    border: 1px solid  #313131 ;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+
+
