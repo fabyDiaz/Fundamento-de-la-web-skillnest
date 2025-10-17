@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petlopedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">Petlopedia</h1>
+        <input type="text" class="search-input" placeholder="buscar mascotas">
+        <button class="login-boton">Iniciar sesión</button>
+    </header>
+
+    <main class="contenedor-main">
+        <div class="contentendor-cards">
+            <div class="pet-cards">
+                <div class="pet-card">
+                    <h2 class="pet-titulo">Gato Atigrado</h2>
+                    <p class="pet-tipo">sustantivo</p>
+                    <p class="pet-plural">Plural: Gatos Atigrados</p>
+                    <p class="pet-descripcion">
+                        Un gato con un pelaje distintivo que presenta rayas, puntos o patrones en remolino, usualmente con una marca en forma de 'M' en su frente
+                    </p>
+                    <button class="likes-button">22 me gusta</button>
+                </div>
+
+                <div class="pet-card">
+                    <h2 class="pet-titulo">Golden Retriever</h2>
+                    <p class="pet-tipo">sustantivo</p>
+                    <p class="pet-plural">Plural: Golden Retrievers</p>
+                    <p class="pet-descripcion">
+                        Una raza de perro amistosa, inteligente y devota, conocida por su pelaje dorado y su habilidad para recuperar objetos sin dañarlos
+                    </p>
+                    <button class="likes-button">15 me gusta</button>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="definicion-card">
+                    <p class="definicion-texto">Petlopedia está definida por T1</p>
+                    <button class="definicion-button" id="defincion-boton">Agregar Definición</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
