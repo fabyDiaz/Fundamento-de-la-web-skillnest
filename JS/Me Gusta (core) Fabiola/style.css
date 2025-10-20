@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.encabezado h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* Contenedor principal con Flexbox */
+.contenedor-principal {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Panel lateral */
+.panel-lateral {
+    flex: 0 0 220px;
+    margin-top: 70px;
+}
+
+.tarjeta-perfil {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.nombre-usuario {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Sección del feed */
+.seccion-feed {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-feed {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Publicaciones */
+.publicacion {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.encabezado-publicacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.nombre-autor {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.seccion-likes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contador-likes {
+    font-size: 14px;
+}
+
+.boton-like {
+    background-color: #ffed00;
+    border: none;
+    padding: 8px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-like:hover {
+    background-color: #ffd700;
+}
+
+.contenido-publicacion {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.enlace {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.enlace:hover {
+    color: #0052a3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column;
+    }
+
+    .panel-lateral {
+        flex: 1;
+    }
+}
