@@ -4,6 +4,11 @@ document.getElementById("defincion-boton").addEventListener("click", function() 
    
 });
 
+document.getElementById("login-boton").addEventListener("click",function(){
+    const boton = this;
+    boton.innerText = "Cerrar Sesión";
+})
+
 
 let botones = document.querySelectorAll(".likes-button");
 
