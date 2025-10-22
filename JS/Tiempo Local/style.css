@@ -1,0 +1,242 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+.encabezado {
+    background: linear-gradient(135deg, #1e88e5 0%, #42a5f5 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.navegacion ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.enlace-nav {
+    color: white;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.enlace-nav:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.mostrar-temperatura {
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+.unidad-temp {
+    background-color: white;
+    color: #1e88e5;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Contenido Principal */
+.contenido-principal {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.nombre-ciudad {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #424242;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de tarjetas del clima con FLEXBOX */
+.contenedor-clima {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Tarjeta individual */
+.tarjeta-clima {
+    background: white;
+    border-radius: 8px;
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 180px;
+    min-width: 180px;
+    max-width: 200px;
+}
+
+.tarjeta-clima:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Icono del clima */
+.icono-clima {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.icono-clima img {
+    max-width: 70px;
+    max-height: 70px;
+    object-fit: contain;
+}
+
+/* Si usas Material Icons en lugar de imágenes */
+.icono-clima .material-icons {
+    font-size: 70px;
+    color: #90a4ae;
+}
+
+/* Día de la semana */
+.dia {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #424242;
+    margin-bottom: 8px;
+}
+
+/* Condición del clima */
+.condicion {
+    font-size: 0.9rem;
+    color: #757575;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+
+/* Temperatura */
+.temperatura {
+    font-size: 1rem;
+    color: #424242;
+    font-weight: 500;
+}
+
+/* Pie de página - PEGADO AL FONDO */
+.pie-pagina {
+    background-color: #212121;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+.aviso-cookies {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.enlace-cookies {
+    color: #42a5f5;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.boton-aceptar {
+    background-color: #ffc107;
+    color: #212121;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-aceptar:hover {
+    background-color: #ffb300;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .navegacion {
+        gap: 15px;
+    }
+
+    .enlace-nav {
+        font-size: 0.85rem;
+    }
+
+    .nombre-ciudad {
+        font-size: 1.5rem;
+    }
+
+    .contenedor-clima {
+        gap: 15px;
+    }
+
+    .tarjeta-clima {
+        flex: 1 1 150px;
+        min-width: 150px;
+    }
+
+    .boton-aceptar {
+        display: block;
+        margin: 10px auto 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-clima {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-clima {
+        width: 100%;
+        max-width: 300px;
+    }
+}

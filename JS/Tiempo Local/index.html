@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Local</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1 class="titulo">Tiempo Local</h1>
+        <nav class="navegacion">
+            <ul>
+                <li class="enlace-nav" id="ba">Buenos Aires</li>
+                <li class="enlace-nav" id="cm">Ciudad de México</li>
+                <li class="enlace-nav" id="sc">Santiago</li>
+                <li class="enlace-nav" id="sp">San Paulo</li>
+                <li class="enlace-nav" id="qe">Quito</li>
+            </ul>
+        </nav>
+        <p class="mostrar-temperatura"> Mostrar temperaturas en
+            <select id="selectT">
+                <option value="1">°C</option>
+                <option value="2">°F</option>
+            </select>
+        </p>
+    </header>
+
+    <main class="contenido-principal">
+        <h2 class="nombre-ciudad" id="nombre-ciudad">Buenos Aires</h2>
+
+        <div class="contenedor-clima">
+            <div class="tarjeta-clima">
+                <div class="icono-clima">
+                    <img src="img/nube.png" alt="Nublado">
+                </div>
+                <h3 class="dia">Hoy</h3>
+                <p class="condicion">Nublado</p>
+                <p class="temperatura"><span class="tempMin">22</span>°C | <span class="tempMax">22</span>°C</p>
+            </div>
+
+
+            <div class="tarjeta-clima">
+                <div class="icono-clima">
+                    <img src="img/lluvia.png" alt="Llovizna">
+                </div>
+                <h3 class="dia">Mañana</h3>
+                <p class="condicion">Llovizna</p>
+                <p class="temperatura"><span class="tempMin">22</span>°C | <span class="tempMax">22</span>°C</p>
+            </div>
+
+            <div class="tarjeta-clima">
+                <div class="icono-clima">
+                    <img src="img/trueno.png" alt="Tormentas">
+                </div>
+                <h3 class="dia">Miércoles</h3>
+                <p class="condicion">Tormentas</p>
+                <p class="temperatura"><span class="tempMin">22</span>°C | <span class="tempMax">22</span>°C</p>
+            </div>
+
+
+            <div class="tarjeta-clima">
+                <div class="icono-clima">
+                    <img src="img/dia-nublado.png" alt="Parcialmente nublado">
+                </div>
+                <h3 class="dia">Jueves</h3>
+                <p class="condicion">Parcialmente<br>nublado</p>
+                <p class="temperatura"><span class="tempMin">22</span>°C | <span class="tempMax">22</span>°C</p>
+            </div>
+
+
+            <div class="tarjeta-clima">
+                <div class="icono-clima">
+                    <img src="img/dom.png" alt="Soleado">
+                </div>
+                <h3 class="dia">Viernes</h3>
+                <p class="condicion">Soleado</p>
+                <p class="temperatura"><span class="tempMin">22</span>°C | <span class="tempMax">22</span>°C</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p class="aviso-cookies">
+            Detente: Tiempo de cookies. Usamos cookies (tristemente, no las comestibles) para personalizar contenido y
+            anuncios, proporcionar funciones de redes sociales y analizar nuestro tráfico.
+            <a href="#" class="enlace-cookies">Leer más</a>
+            <button class="boton-aceptar">Aceptar</button>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

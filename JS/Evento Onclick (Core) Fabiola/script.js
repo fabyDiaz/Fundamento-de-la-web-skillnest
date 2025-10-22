@@ -12,9 +12,9 @@ document.getElementById("login-boton").addEventListener("click",function(){
 
 let botones = document.querySelectorAll(".likes-button");
 
-botones.forEach(function(botonLike) {
-    let contador = 0;
-   botonLike.addEventListener("click", function() {
+for (let botonLike  of botones){
+     let contador = 0;
+        botonLike.addEventListener("click", function() {
         // Buscar el título dentro de la misma tarjeta (pet-card)
         let titulo = botonLike.closest('.pet-card').querySelector('.pet-titulo');
         alert(titulo.textContent + " was liked");
@@ -22,4 +22,4 @@ botones.forEach(function(botonLike) {
         contador += 1;
         botonLike.textContent = contador + " me gusta";
     });
-});
+}
