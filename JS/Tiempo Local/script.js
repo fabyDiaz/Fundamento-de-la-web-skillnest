@@ -1,5 +1,7 @@
 window.addEventListener("load", function () {
   this.alert("Cargando Reporte del Clima");
+  mostrarImagenAleatoria();
+  temperaturaAleatoria();
 });
 
 let ciudad = document.querySelectorAll(".enlace-nav");
